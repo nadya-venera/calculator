@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Calculator</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<section data-calc>
+    <input value="0" data-calc-display>
+    <section class="controls">
+        <button data-calc-power data-calc-operator="power">X<span class="exp">y</span></button>
+        <button data-calc-sqrt>√</button>
+
+        <button data-calc-reset>C</button>
+        <button data-calc-clear>CE</button>
+    </section>
+    <section class="controls">
+        <section class="numbers">
+            <button data-calc-number="7">7</button>
+            <button data-calc-number="8">8</button>
+            <button data-calc-number="9">9</button>
+
+            <button data-calc-number="4">4</button>
+            <button data-calc-number="5">5</button>
+            <button data-calc-number="6">6</button>
+
+            <button data-calc-number="1">1</button>
+            <button data-calc-number="2">2</button>
+            <button data-calc-number="3">3</button>
+
+            <button data-calc-number="0">0</button>
+            <button data-calc-decimal>.</button>
+            <button data-calc-negative>±</button>
+        </section>
+        <section class="operators">
+            <button data-calc-operator="/">÷</button>
+            <button data-calc-operator="*">×</button>
+            <button data-calc-operator="-">-</button>
+            <button data-calc-operator="+">+</button>
+        </section>
+    </section>
+    <button data-calc-result>=</button>
+</section>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>

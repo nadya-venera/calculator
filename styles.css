@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    /*text-align: start;*/
+    cursor: pointer;
+    outline: 0;
+}
+
+[data-calc-display] {
+    border: 1px solid grey;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 20px;
+    color: white;
+    background: #535a53;
+    text-align: right;
+    width: 184px;
+    margin: 0 auto;
+}
+
+[data-calc] {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.controls {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+[data-calc] button {
+    font-size: 20px;
+    margin: 4px 4px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.numbers {
+    display: flex;
+    flex-flow: row wrap;
+    width: 144px;
+}
+
+[data-calc-number] {
+    color: white;
+    background: #5a9984;
+}
+
+[data-calc-decimal] {
+    color: white;
+    background: #3e6b92;
+}
+
+button[data-calc-result] {
+    color: white;
+    background: #535a53;
+    width: 184px;
+}
+
+.operators {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+[data-calc-operator] {
+    color: black;
+    background: #e7a45c;
+}
+
+[data-calc-power] {
+    position: relative;
+}
+
+[data-calc-power] > .exp {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: .5em;
+}
